@@ -552,8 +552,10 @@
   .ticker-item { transition: color 0.2s; }
   .ticker-item:hover { color: var(--accent); }
 
-  /* Mobile */
-  @media (max-width: 900px) {
+  @media (hover: none) and (pointer: coarse) {
+    body { cursor: auto; }
+    .cursor, .cursor-ring { display: none; }
+  }
     nav { padding: 16px 24px; }
     .nav-links { display: none; }
     .hero, section { padding: 80px 24px; }
@@ -603,8 +605,7 @@
       <span class="name-accent">Raj</span>
     </h1>
     <p class="hero-sub">
-      Building distributed systems and production agentic AI that scale —
-      from privacy infra handling <em>1M+ events/day</em> to multi-agent LLM orchestration.
+      Patent holder. Built systems handling <em>1M+ events/day</em>, containerized 196 microservices, optimized search from 3s to 200ms — all before 30.
     </p>
     <div class="hero-stats">
       <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Years Exp</span></div>
@@ -657,9 +658,9 @@
   <h2 class="section-title reveal">Who I Am</h2>
   <div class="about-grid">
     <div class="about-text reveal-left">
-      <p>I'm a Senior SDE with <strong>5+ years building systems that scale</strong> — across fintech, e-commerce, privacy-tech, and startup infra. I graduated with a B+M.Tech in IT from <strong>IIIT Gwalior</strong> and have been engineering for production ever since.</p>
-      <p>My current focus is at the intersection of <strong>distributed systems and agentic AI</strong> — designing LLM orchestration pipelines with tool-calling, critic loops, and human-in-the-loop feedback that actually ship to production.</p>
-      <p>I've owned systems from blank files to 99.9% uptime — multi-region serverless pipelines, 196-microservice orgs, and patent-holding optimization algorithms.</p>
+      <p>I'm a Senior SDE with <strong>5+ years building backend systems at scale</strong> — across e-commerce, privacy-tech, mobility, and interior-tech. B+M.Tech in IT from <strong>IIIT Gwalior</strong>, and I've been shipping production systems ever since.</p>
+      <p>I've scaled search from <strong>3s to 200ms</strong> at Zoomcar, helped containerize <strong>196 microservices</strong> enabling 800+ daily deploys at Meesho, built a <strong>patented NP-hard optimization algorithm</strong> at Bonito, and designed privacy infrastructure handling <strong>1M+ consent events/day</strong> at Relyance AI.</p>
+      <p>Lately I've been deep in <strong>agentic AI</strong> — building a production Manager/Worker/Critic LLM orchestration system with RAG, tool-calling, and human-in-the-loop retry from scratch. I like owning things end to end.</p>
     </div>
     <div class="about-highlights stagger-children reveal-right">
       <div class="highlight-item">
@@ -862,19 +863,19 @@
       <div class="bc-handle">↗ @adiww7</div>
     </a>
     <div class="beyond-card placeholder">
-      <div class="bc-top"><div class="bc-icon">🎵</div><span class="bc-badge badge-soon">Coming Soon</span></div>
+      <div class="bc-top"><div class="bc-icon">🎵</div></div>
       <div class="bc-platform">YouTube · Reels</div>
       <div class="bc-title">Ukulele</div>
-      <div class="bc-desc">I play ukulele — covers, originals, whatever sounds right that evening. Videos dropping soon.</div>
-      <div class="bc-handle-dim">// link coming soon</div>
+      <div class="bc-desc">I play ukulele — covers, originals, whatever sounds right that evening.</div>
+      <div class="bc-handle-dim">// videos coming soon</div>
     </div>
-    <div class="beyond-card inactive">
-      <div class="bc-top"><div class="bc-icon">📸</div><span class="bc-badge badge-inactive">Inactive</span></div>
+    <a class="beyond-card" href="https://instagram.com/adi_ww7" target="_blank" rel="noopener">
+      <div class="bc-top"><div class="bc-icon">📸</div></div>
       <div class="bc-platform">Instagram</div>
       <div class="bc-title">@adi_ww7</div>
-      <div class="bc-desc">Currently deactivated — but the handle's mine. Will be back when the timing's right.</div>
-      <div class="bc-handle-dim">// instagram.com/adi_ww7</div>
-    </div>
+      <div class="bc-desc">Moments, frames, and everything in between.</div>
+      <div class="bc-handle">↗ instagram.com/adi_ww7</div>
+    </a>
   </div>
 </section>
 
